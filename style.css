@@ -1,0 +1,215 @@
+/* ===================================================
+   Portfolio Stylesheet - Kapilesh B
+   Theme: Minimalist Light Theme with Classic Navy Blue
+   =================================================== */
+
+:root {
+  --navy-primary: #0f2b48;
+  --navy-hover: #091c30;
+  --navy-subtle: #e8eef5;
+  --navy-accent: #1e3a8a;
+  --text-dark: #212529;
+  --text-muted: #64748b;
+  --card-border: #e2e8f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: var(--text-dark);
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+/* ------------------- Typography & Colors ------------------- */
+.text-navy {
+  color: var(--navy-primary) !important;
+}
+
+.text-navy-accent {
+  color: var(--navy-accent) !important;
+}
+
+.bg-navy {
+  background-color: var(--navy-primary) !important;
+}
+
+.bg-navy-subtle {
+  background-color: var(--navy-subtle) !important;
+}
+
+.border-navy-subtle {
+  border-color: #cbd5e1 !important;
+}
+
+.tracking-wide {
+  letter-spacing: 1.5px;
+}
+
+.leading-relaxed {
+  line-height: 1.75;
+}
+
+/* ------------------- Navigation ------------------- */
+.navbar {
+  border-bottom: 1px solid var(--card-border);
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  color: #475569;
+  padding: 0.5rem 0.85rem !important;
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: var(--navy-primary);
+  font-weight: 600;
+}
+
+/* ------------------- Buttons ------------------- */
+.btn-navy {
+  background-color: var(--navy-primary);
+  color: #ffffff;
+  border: 1px solid var(--navy-primary);
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-navy:hover {
+  background-color: var(--navy-hover);
+  border-color: var(--navy-hover);
+  color: #ffffff;
+}
+
+.btn-outline-navy {
+  background-color: transparent;
+  color: var(--navy-primary);
+  border: 1px solid var(--navy-primary);
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-navy:hover {
+  background-color: var(--navy-primary);
+  color: #ffffff;
+}
+
+/* ------------------- Hero Section ------------------- */
+.hero-section {
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  min-height: 75vh;
+}
+
+.hero-bio {
+  max-width: 650px;
+}
+
+.profile-card {
+  max-width: 320px;
+  border-color: var(--card-border) !important;
+}
+
+.avatar-circle {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background-color: var(--navy-primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(15, 43, 72, 0.15);
+}
+
+/* ------------------- Cards & Sections ------------------- */
+.section-title h2 {
+  position: relative;
+  display: inline-block;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 36px;
+  height: 3px;
+  background-color: var(--navy-primary);
+  border-radius: 2px;
+}
+
+.timeline-card {
+  border-color: var(--card-border) !important;
+  border-left: 4px solid var(--navy-primary) !important;
+}
+
+.skill-card {
+  border-color: var(--card-border) !important;
+  background-color: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(15, 43, 72, 0.06);
+}
+
+.skill-badge {
+  background-color: var(--navy-subtle);
+  color: var(--navy-primary);
+  font-weight: 500;
+  font-size: 0.82rem;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid #d0ddec;
+}
+
+.project-card {
+  border-color: var(--card-border) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(15, 43, 72, 0.08);
+}
+
+/* ------------------- Contact Section ------------------- */
+.contact-card {
+  border-color: var(--card-border) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(15, 43, 72, 0.06);
+}
+
+.contact-icon-box {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------------------- Footer ------------------- */
+.hover-white:hover {
+  color: #ffffff !important;
+}
+
+/* ------------------- Responsive ------------------- */
+@media (max-width: 991.98px) {
+  .hero-section {
+    min-height: auto;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
